@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Sai Kalyan Yalla — Senior Lead Data Engineer portfolio">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<title>Sai Kalyan Yalla — Data Engineering Portfolio</title>
+<style>
+:root{--bg:#050a14;--panel:#0b1424;--panel2:#0f1c31;--text:#f4f8ff;--muted:#9aaac0;--cyan:#4ee7ff;--violet:#9b7cff;--pink:#ff67b5;--lime:#baf36b;--line:rgba(255,255,255,.1)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 10% 0%,#102b40 0,transparent 30%),radial-gradient(circle at 90% 5%,#241343 0,transparent 28%),var(--bg);color:var(--text);font:15px/1.65 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.16;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:55px 55px;mask-image:linear-gradient(to bottom,#000,transparent 90%);z-index:-1}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,92%);margin:auto}
+nav{position:fixed;z-index:50;inset:0 0 auto;height:70px;background:rgba(5,10,20,.68);backdrop-filter:blur(20px);border-bottom:1px solid var(--line)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:900;letter-spacing:.4px}.brand em{font-style:normal;color:var(--cyan)}.links{display:flex;gap:24px;color:#aebbd0;font-size:13px}.links a:hover{color:#fff}.navbtn{padding:10px 15px;border:1px solid var(--line);border-radius:12px;font-weight:800;font-size:13px}
+.hero{min-height:820px;padding:145px 0 90px;display:grid;grid-template-columns:1.02fr .98fr;gap:40px;align-items:center;position:relative}
+.eyebrow{color:#bdf6ff;font-size:11px;font-weight:900;letter-spacing:1.8px;text-transform:uppercase;display:flex;gap:9px;align-items:center}.live{width:7px;height:7px;border-radius:50%;background:var(--lime);box-shadow:0 0 20px var(--lime);animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.7);opacity:.55}}
+h1{font-size:clamp(54px,7vw,90px);line-height:.95;letter-spacing:-5px;margin:22px 0}.grad{background:linear-gradient(100deg,#fff,var(--cyan),var(--violet));-webkit-background-clip:text;color:transparent}
+.hero .hero-kicker{font-size:clamp(42px,6.2vw,78px);line-height:.88;letter-spacing:-4px;font-weight:1000;text-transform:uppercase;margin:22px 0 16px;position:relative}
+.hero .hero-kicker .word{display:block;background:linear-gradient(100deg,#ffffff 0%,#4ee7ff 38%,#9b7cff 75%,#ff67b5 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 0 35px rgba(78,231,255,.12);animation:titlePulse 3.5s ease-in-out infinite}
+.hero .hero-kicker .word:last-child{font-size:.88em}
+@keyframes titlePulse{50%{filter:brightness(1.12);transform:translateX(4px)}}
+.hero .name-line{font-size:18px;color:#d8e4f3;font-weight:850;letter-spacing:.5px;margin:0 0 12px}
+.hero p{color:var(--muted);font-size:18px;max-width:650px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}.btn{padding:13px 18px;border-radius:13px;border:1px solid var(--line);font-weight:850;display:inline-flex;align-items:center;gap:9px;transition:.25s}.btn:hover{transform:translateY(-3px);border-color:#48ddf8}.primary{border:0;background:linear-gradient(135deg,var(--cyan),var(--violet));color:#06101c;box-shadow:0 14px 40px #35dffc1f}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{padding:7px 10px;border:1px solid var(--line);background:#ffffff06;border-radius:999px;color:#c7d3e4;font-size:12px}
+.visual{position:relative;min-height:470px;display:grid;place-items:center}.orb{position:absolute;width:390px;height:390px;border-radius:50%;background:radial-gradient(circle,rgba(78,231,255,.2),rgba(155,124,255,.12) 40%,transparent 68%);filter:blur(4px);animation:float 7s ease-in-out infinite}@keyframes float{50%{transform:translateY(-18px) scale(1.03)}}
+.arch{width:min(500px,100%);position:relative;padding:24px;border:1px solid var(--line);border-radius:30px;background:linear-gradient(145deg,#10213aee,#07111fee);box-shadow:0 30px 100px #0008;animation:float 7s ease-in-out infinite 1s}
+.arch:after{content:"";position:absolute;inset:-1px;border-radius:30px;padding:1px;background:linear-gradient(120deg,#4ee7ff55,transparent 45%,#9b7cff55);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.node{display:flex;align-items:center;gap:12px;padding:14px;border:1px solid var(--line);border-radius:16px;background:#ffffff05;margin:10px 0;position:relative;overflow:hidden}.node:before{content:"";position:absolute;left:-20%;top:0;width:20%;height:100%;background:linear-gradient(90deg,transparent,#4ee7ff66,transparent);animation:scan 3.2s infinite}@keyframes scan{to{left:120%}}
+.icon{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#4ee7ff25,#9b7cff2b);border:1px solid #ffffff12;color:var(--cyan);font-weight:900}.node b{display:block}.node span{display:block;color:var(--muted);font-size:11px}
+.flow{height:18px;position:relative;margin:3px 0}.flow:before{content:"";position:absolute;left:50%;top:0;height:100%;border-left:1px dashed #4ee7ff66}.flow:after{content:"";position:absolute;width:5px;height:5px;border-radius:50%;background:var(--cyan);left:calc(50% - 2px);top:-2px;box-shadow:0 0 12px var(--cyan);animation:flow 1.8s linear infinite}@keyframes flow{to{top:17px;opacity:0}}
+section{padding:90px 0}.head{margin-bottom:34px}.kicker{font-size:11px;letter-spacing:1.8px;color:var(--cyan);font-weight:900;text-transform:uppercase}.head h2{font-size:clamp(32px,4vw,50px);letter-spacing:-2px;line-height:1.05;margin:7px 0}.head p{color:var(--muted);max-width:700px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.metric{padding:25px;border:1px solid var(--line);border-radius:20px;background:#ffffff04}.metric strong{font-size:35px;display:block}.metric span{font-size:12px;color:var(--muted)}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}.filter{cursor:pointer;padding:8px 12px;border:1px solid var(--line);border-radius:999px;background:#ffffff04;color:#aebbd0}.filter.active{color:#06101b;background:var(--cyan);border-color:var(--cyan)}
+.card{border:1px solid var(--line);border-radius:22px;padding:22px;background:linear-gradient(145deg,#102038cc,#091322cc);transition:.3s;position:relative;overflow:hidden}.card:hover{transform:translateY(-7px);border-color:#4ee7ff55;box-shadow:0 25px 70px #0007}.card .mini{color:var(--cyan);font-size:10px;font-weight:900;letter-spacing:1.3px}.card h3{font-size:20px;margin:9px 0}.card p{color:var(--muted);font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tags i{font-style:normal;font-size:10px;padding:5px 7px;border-radius:7px;background:#ffffff08;border:1px solid #ffffff09;color:#bdcadd}
+.skills{display:flex;flex-wrap:wrap;gap:10px}.skill{padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:#ffffff04;color:#d5dfed;transition:.25s}.skill:hover{transform:translateY(-3px) rotate(-1deg);border-color:#9b7cff66}
+.timeline{position:relative;margin-top:30px}.timeline:before{content:"";position:absolute;left:8px;top:5px;bottom:5px;width:1px;background:linear-gradient(var(--cyan),var(--violet),transparent)}.job{padding:0 0 30px 42px;position:relative}.job:before{content:"";position:absolute;left:2px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px #4ee7ff88}.job .date{font-size:11px;color:var(--cyan);font-weight:900}.job h3{margin:4px 0 0;font-size:19px}.job b{font-size:13px}.job p{color:var(--muted);font-size:13px;margin:6px 0}
+.contactbox{padding:42px;border:1px solid #4ee7ff22;border-radius:28px;background:linear-gradient(135deg,#4ee7ff0e,#9b7cff10);display:flex;justify-content:space-between;align-items:center;gap:30px}.contactbox h2{font-size:38px;letter-spacing:-1.5px;margin:6px 0}.contactbox p{color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:28px 0;color:#718099;font-size:11px}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+#cursor{position:fixed;width:180px;height:180px;border-radius:50%;background:radial-gradient(circle,#4ee7ff12,transparent 65%);pointer-events:none;z-index:-1;transform:translate(-50%,-50%)}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:120px}.visual{min-height:390px}.projects{grid-template-columns:1fr 1fr}.metrics{grid-template-columns:1fr 1fr}.links{display:none}}
+@media(max-width:560px){h1{letter-spacing:-3px}.projects{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.contactbox{display:block}.contactbox .actions{margin-bottom:0}}
+
+.profile-card{position:relative;max-width:430px;margin:auto;border:1px solid rgba(255,255,255,.12);border-radius:30px;padding:10px;background:linear-gradient(145deg,#13233dcc,#07111fee);box-shadow:0 30px 90px #0009;transform-style:preserve-3d;transition:transform .15s ease}
+.profile-card img{width:100%;height:510px;object-fit:cover;object-position:center 45%;border-radius:22px;display:block;filter:saturate(1.05) contrast(1.03)}
+.profile-card:before{content:"";position:absolute;inset:10px;border-radius:22px;background:linear-gradient(180deg,transparent 55%,rgba(4,9,17,.9));pointer-events:none;z-index:1}
+.profile-label{position:absolute;z-index:2;left:28px;bottom:25px}.profile-label b{font-size:22px}.profile-label span{display:block;color:#b7c5d8;font-size:12px}
+.profile-badge{position:absolute;z-index:3;right:-18px;top:35px;padding:12px 15px;border:1px solid #4ee7ff55;border-radius:16px;background:#07111eee;backdrop-filter:blur(12px);color:#bff7ff;font-weight:800;font-size:11px;box-shadow:0 15px 40px #0008}
+.logo-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:24px}
+.logo-tile{min-height:92px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#ffffff07,#ffffff02);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;transition:.25s}
+.logo-tile:hover{transform:translateY(-5px) scale(1.03);border-color:#4ee7ff66;background:#4ee7ff08}
+.logo-tile i{font-size:34px}.logo-tile span{font-size:10px;color:#b9c7d9;font-weight:800;text-align:center}
+.logo-tile .azure{color:#1599ff}.logo-tile .aws{color:#ff9900}.logo-tile .dbx{color:#ff3621}.logo-tile .snow{color:#29b5e8}.logo-tile .spark{color:#e25b1f}.logo-tile .python{color:#ffd343}.logo-tile .kafka{color:#fff}.logo-tile .tf{color:#844fba}.logo-tile .power{color:#f2c811}.logo-tile .git{color:#f05032}.logo-tile .sql{color:#4aa3df}.logo-tile .dbt{color:#ff694a}
+@media(max-width:900px){.logo-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:560px){.logo-grid{grid-template-columns:repeat(3,1fr)}.profile-card img{height:430px}}
+
+</style>
+</head>
+<body>
+<div id="cursor"></div>
+<nav><div class="wrap nav">
+<a class="brand" href="#home">SAI KALYAN <em>YALLA</em></a>
+<div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#stack">Stack</a><a href="#experience">Experience</a><a href="#contact">Contact</a></div>
+<a class="navbtn" href="https://www.linkedin.com/in/sai-kalyan-yalla-a5339b118" target="_blank">LinkedIn ↗</a>
+</div></nav>
+
+<main id="home">
+<section class="hero wrap">
+<div class="reveal">
+<div class="eyebrow"><span class="live"></span> CLOUD · DATA · ANALYTICS · ENGINEERING</div>
+<h1 class="hero-kicker"><span class="word">DATA</span><span class="word">ENGINEER</span></h1>
+<div class="name-line">SAI KALYAN YALLA · SENIOR LEAD DATA ENGINEER</div>
+<p>I design and build scalable data platforms across Azure and AWS — from high-throughput ingestion and lakehouse architecture to analytics, governance and production-grade orchestration.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore my work →</a><a class="btn" href="mailto:kalyanyalla515@gmail.com">Let's connect</a></div>
+<div class="chips"><span class="chip">Azure</span><span class="chip">Databricks</span><span class="chip">Snowflake</span><span class="chip">Spark</span><span class="chip">dbt</span><span class="chip">Python</span><span class="chip">Kafka</span></div>
+</div>
+<div class="visual reveal">
+<div class="orb"></div>
+<div class="profile-card" id="profileCard">
+  <img src="assets/sai-kalyan-profile.jpg" alt="Sai Kalyan Yalla">
+  <div class="profile-badge">DATA • CLOUD • ANALYTICS</div>
+  <div class="profile-label"><b>Sai Kalyan Yalla</b><span>Senior Lead Data Engineer</span></div>
+</div>
+</div>
+</section>
+
+<section class="wrap reveal" id="about">
+<div class="head"><div class="kicker">Impact</div><h2>Engineering for scale, reliability and insight.</h2><p>Experience documented across healthcare, insurance, retail, oil & gas and enterprise cloud environments.</p></div>
+<div class="metrics">
+<div class="metric"><strong data-count="10">0</strong><span>+ years of data engineering</span></div>
+<div class="metric"><strong>PB</strong><span>scale migration experience</span></div>
+<div class="metric"><strong>500M+</strong><span>row fact-table optimization</span></div>
+<div class="metric"><strong>6+</strong><span>enterprise domains / environments</span></div>
+</div>
+<div style="margin-top:42px">
+  <div class="kicker">Core technology stack</div>
+  <div class="logo-grid">
+    <div class="logo-tile"><i class="devicon-azure-plain azure"></i><span>Azure</span></div>
+    <div class="logo-tile"><i class="devicon-amazonwebservices-plain-wordmark aws"></i><span>AWS</span></div>
+    <div class="logo-tile"><i class="devicon-databricks-plain dbx"></i><span>Databricks</span></div>
+    <div class="logo-tile"><i class="devicon-snowflake-plain snow"></i><span>Snowflake</span></div>
+    <div class="logo-tile"><i class="devicon-apachespark-original spark"></i><span>Apache Spark</span></div>
+    <div class="logo-tile"><i class="devicon-python-plain python"></i><span>Python</span></div>
+    <div class="logo-tile"><i class="devicon-apachekafka-original kafka"></i><span>Kafka</span></div>
+    <div class="logo-tile"><i class="devicon-terraform-plain tf"></i><span>Terraform</span></div>
+    <div class="logo-tile"><i class="devicon-microsoftsqlserver-plain sql"></i><span>SQL Server</span></div>
+    <div class="logo-tile"><i class="devicon-git-plain git"></i><span>Git</span></div>
+    <div class="logo-tile"><i class="devicon-powershell-plain power"></i><span>PowerShell</span></div>
+    <div class="logo-tile"><span style="font-size:22px;color:#ff694a;font-weight:900">dbt</span><span>dbt</span></div>
+  </div>
+</div>
+</section>
+
+<section class="wrap reveal" id="projects">
+<div class="head"><div class="kicker">Selected projects</div><h2>Systems I’ve helped build.</h2><p>Click a category to explore the work most relevant to it.</p></div>
+<div class="filters"><button class="filter active" data-filter="all">All</button><button class="filter" data-filter="cloud">Cloud</button><button class="filter" data-filter="analytics">Analytics</button><button class="filter" data-filter="streaming">Streaming</button><button class="filter" data-filter="governance">Governance</button></div>
+<div class="projects">
+<article class="card project" data-cat="cloud"><div class="mini">01 · CLOUD / LAKEHOUSE</div><h3>Azure Lakehouse Modernization</h3><p>Scalable batch and streaming pipelines with Databricks and Spark; legacy ETL and SQL logic migrated into optimized PySpark and Databricks SQL.</p><div class="tags"><i>Azure</i><i>Databricks</i><i>ADLS</i><i>Delta Lake</i><i>ADF</i></div></article>
+<article class="card project" data-cat="analytics"><div class="mini">02 · HEALTHCARE ANALYTICS</div><h3>Claims Analytics & Fraud Features</h3><p>Terabyte-scale claims processing with normalization, deduplication, adjudication rules, SCD Type 2 and fraud-detection feature pipelines.</p><div class="tags"><i>PySpark</i><i>Synapse</i><i>Unity Catalog</i><i>Purview</i></div></article>
+<article class="card project" data-cat="cloud"><div class="mini">03 · ELT / WAREHOUSE</div><h3>Snowflake ELT Platform</h3><p>Analytics-ready models and automated ingestion using dbt, Fivetran and Matillion, with Snowflake workload optimization.</p><div class="tags"><i>Snowflake</i><i>dbt</i><i>Fivetran</i><i>Matillion</i></div></article>
+<article class="card project" data-cat="streaming"><div class="mini">04 · REAL-TIME</div><h3>Streaming & IoT Pipelines</h3><p>Delta Lake streaming architectures using Azure Event Hubs and Kafka for real-time ingestion and analytics.</p><div class="tags"><i>Kafka</i><i>Event Hubs</i><i>Structured Streaming</i><i>Delta</i></div></article>
+<article class="card project" data-cat="analytics"><div class="mini">05 · RETAIL ANALYTICS</div><h3>Retail Sales & Customer Data</h3><p>Integrated POS, SAP, Salesforce and e-commerce data for sales, inventory, segmentation, forecasting and BI.</p><div class="tags"><i>Azure</i><i>Snowflake</i><i>Power BI</i><i>Python</i></div></article>
+<article class="card project" data-cat="governance"><div class="mini">06 · TRUSTED DATA</div><h3>Governance & Security</h3><p>Enterprise controls using Unity Catalog, Purview, RBAC, PII masking, lineage, Azure AD, OAuth and JWT.</p><div class="tags"><i>Purview</i><i>Unity Catalog</i><i>RBAC</i><i>OAuth</i></div></article>
+</div>
+</section>
+
+<section class="wrap reveal" id="stack">
+<div class="head"><div class="kicker">Technology</div><h2>The stack behind the work.</h2></div>
+<div class="skills">
+<span class="skill">Azure Data Factory</span><span class="skill">Azure Databricks</span><span class="skill">ADLS Gen2</span><span class="skill">Azure Synapse</span><span class="skill">Microsoft Fabric</span><span class="skill">AWS S3</span><span class="skill">AWS Glue / EMR</span><span class="skill">Snowflake</span><span class="skill">Apache Spark</span><span class="skill">PySpark</span><span class="skill">Python</span><span class="skill">Scala</span><span class="skill">SQL</span><span class="skill">Delta Lake</span><span class="skill">Kafka</span><span class="skill">dbt</span><span class="skill">Fivetran</span><span class="skill">Airflow</span><span class="skill">Prefect</span><span class="skill">Terraform</span><span class="skill">GitHub Actions</span><span class="skill">Jenkins</span><span class="skill">Power BI</span><span class="skill">Unity Catalog</span><span class="skill">Microsoft Purview</span>
+</div>
+</section>
+
+<section class="wrap reveal" id="experience">
+<div class="head"><div class="kicker">Experience</div><h2>A decade of evolving with data.</h2></div>
+<div class="timeline">
+<div class="job"><div class="date">DEC 2025 — PRESENT</div><h3>Sr. Lead Data Engineer</h3><b>Humana · Kentucky</b><p>Databricks, Spark, dbt, Snowflake, Fivetran, Matillion, Terraform, CI/CD and large-scale migration.</p></div>
+<div class="job"><div class="date">JAN 2025 — DEC 2025</div><h3>Sr. Lead Data Engineer</h3><b>MetLife · Cary, NC</b><p>Healthcare claims lakehouse, fraud feature pipelines, Synapse, governance and distributed migration frameworks.</p></div>
+<div class="job"><div class="date">MAR 2024 — DEC 2024</div><h3>Sr. Azure Data Engineer</h3><b>Mars Inc · India</b><p>Azure, Snowflake, GCP, AWS, Customer Insights, MDM, Fabric, Power BI and CI/CD.</p></div>
+<div class="job"><div class="date">MAR 2022 — MAR 2024</div><h3>Azure Data Engineer</h3><b>Shell · Wipro</b><p>Delta Lake, Event Hubs, Kafka, streaming analytics, Snowflake optimization and governance.</p></div>
+<div class="job"><div class="date">FEB 2019 — MAR 2022</div><h3>Data Engineer</h3><b>Acosta · Sitec Technologies</b><p>Retail/e-commerce pipelines, predictive analytics, Snowflake and Power BI.</p></div>
+<div class="job"><div class="date">JAN 2016 — DEC 2018</div><h3>Data Analyst</h3><b>Costco · Sitec Technologies</b><p>SQL Server, SSIS, dimensional modeling, retail analytics, Power BI and Tableau.</p></div>
+</div>
+</section>
+
+<section class="wrap reveal" id="contact">
+<div class="contactbox"><div><div class="kicker">Let's connect</div><h2>Have a data challenge?</h2><p>Open to conversations around cloud modernization, lakehouse architecture and data engineering.</p></div><div class="actions"><a class="btn primary" href="mailto:kalyanyalla515@gmail.com">Email me →</a><a class="btn" href="https://www.linkedin.com/in/sai-kalyan-yalla-a5339b118" target="_blank">LinkedIn ↗</a></div></div>
+</section>
+</main>
+<footer><div class="wrap">© 2026 Sai Kalyan Yalla · Senior Lead Data Engineer</div></footer>
+<script>
+const profile=document.getElementById('profileCard');
+profile?.addEventListener('mousemove',e=>{const r=profile.getBoundingClientRect();const x=(e.clientX-r.left)/r.width-.5;const y=(e.clientY-r.top)/r.height-.5;profile.style.transform=`perspective(900px) rotateY(${x*8}deg) rotateX(${-y*6}deg)`});
+profile?.addEventListener('mouseleave',()=>profile.style.transform='');
+const cursor=document.getElementById('cursor');
+addEventListener('mousemove',e=>{cursor.style.left=e.clientX+'px';cursor.style.top=e.clientY+'px'});
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+document.querySelectorAll('.filter').forEach(btn=>btn.onclick=()=>{
+ document.querySelectorAll('.filter').forEach(b=>b.classList.remove('active'));btn.classList.add('active');
+ const f=btn.dataset.filter;
+ document.querySelectorAll('.project').forEach(p=>{p.style.display=(f==='all'||p.dataset.cat===f)?'block':'none'});
+});
+const counter=document.querySelector('[data-count]');
+let done=false;
+const co=new IntersectionObserver(es=>{if(es[0].isIntersecting&&!done){done=true;let n=0,t=+counter.dataset.count;let id=setInterval(()=>{counter.textContent=++n;if(n>=t)clearInterval(id)},90)}});co.observe(counter);
+</script>
+</body>
+</html>
